@@ -1,0 +1,46 @@
+<!--
+	colgroup
+	뒤에 나오는 컬럼(td태그)에 적용할 스타일을 colgroup 태그에서 미리 적용할 수 있게 한다.
+	특히 각 컬럼의 길이를 설정하는 데 가장 많이 쓰인다.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>colgroup 예제</title>
+</head>
+<body>
+	<table border="1">
+		<colgroup>
+			<col style="width: 100px;">
+			<col style="width: 300px;">
+			<col style="width: 100px;">
+			<col style="width: 300px;">
+		</colgroup>
+		<tr>
+			<th>이름</th>
+			<td></td>
+			<th>연락처</th>
+			<td></td>
+		</tr>
+		<tr>
+			<th>주소</th>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<th>자기소개</th>
+			<td colspan="3"></td>
+		</tr>
+	</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

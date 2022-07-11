@@ -1,0 +1,94 @@
+form 태그
+	웹 페이지 내에서 사용자로부터 입력을 받을 때 사용하는 태그
+	사용자가 입력한 데이터를 다른 페이지로 전송할 때 form태그를 사용한다.
+
+	<form action="" method="" name="">
+		입력 양식 태그
+		...
+	</form>
+
+	- action : 데이터를 전송할 페이지의 경로(생략 시 현재 페이지)
+	- method : 데이터를 전송하는 방식(생략 시 get방식)
+	- name : form태그의 이름을 설정(생략 시 이름 없음)
+
+input 태그
+	입력 받기 위해 사용되는 태그
+
+	type : 입력의 종류를 설정
+	name : value의 key값
+	value : 사용자가 입력한 값, 미리 설정해 놓을 값
+	placeholder : 값은 아니지만 미리 출력할 문구
+	readonly : 수정할 수 없도록 하는 설정
+	required : 필수 항목
+	maxlength : 글자 수 제한
+
+input 태그의 type
+	<input type="값">
+
+	text : 텍스트 입력(작성한 텍스트가 눈으로 보임)
+	password : 텍스트 입력(작성한 텍스트가 눈으로 안보임)
+	radio : 여러 개 중 하나의 옵션만 선택 가능
+	checkbox : 여러 개 중 다수의 옵션 선택 가능
+	file : 파일 전송(첨부파일 업로드)
+	color : 색상 선택
+	email : 이메일 입력(골뱅이 포함 입력)
+	url : http://로 입력
+	tel : 핸드폰 번호 입력
+	date : 날짜 입력(브라우저 별로 캘린더의 스타일은 다를 수 있다)
+	number, min, max, step : 숫자 입력
+	range : 일정 범위 안의 값만 입력
+	search : 검색어를 입력(x버튼이 생겨서 입력한 텍스트를 전체 삭제할 수 있다)
+	button, submit, reset : 버튼(클릭(버튼태그와 동일), form 전송, 초기화)
+
+선택 입력
+	select 요소는 여러 개의 옵션이 드롭다운 리스트로 되어 있으며, 
+	그 중에서 단 하나의 옵션만을 입력받을 수 있다.
+	option 요소는 드롭다운 리스트에서 선택할 수 있는 각각의 옵션을 명시한다.
+
+	<select name="">
+		<option value="실제 값1">사용자에게 보여질 값1</option>
+		<option value="실제 값2">사용자에게 보여질 값2</option>
+		...
+	</select>
+
+문장 입력
+	textarea 요소는 사용자로부터 여러 줄의 텍스트를 입력받을 수 있다.
+	<textarea cols="가로 글자 수 크기" rows="세로 글자 수 크기">실제 값</textarea>
+
+datalist
+	form 요소에서 미리 지정된 옵션 목록을 제공
+	사용자들이 특정 글자를 입력하는 그에 해당하는 미리 지정된 목록을 보여준다.
+
+	<input type="text" list="id값">
+	
+	<datalist id="datalist의 id">
+		<option value="실제 값1" label="표기할 값1"></option>
+		<option value="실제 값2" label="표기할 값2"></option>
+		...
+	</datalist>
+
+진행 정도
+	progress 태그를 이용하면 진행정도를 나타낼 수 있다.
+	<progress value="현재 값" max="최대값"></progress>
+
+fieldset
+	fieldset요소는 관련 있는 폼 필드 세트를 표시한다.
+	form필드 세트는 form내에서 관련 태그를 하나의 그룹으로 묶은 것을 의미한다.
+
+legend
+	fieldset요소의 제목을 표시
+	묶음에 대한 설명을 할 때 사용한다.
+----------------------------------------------------------------
+[실습] 
+타 사이트에 접속하여 회원가입, 로그인 페이지를 그대로 똑같이 제작한다.
+
+
+
+
+
+
+
+
+
+
+

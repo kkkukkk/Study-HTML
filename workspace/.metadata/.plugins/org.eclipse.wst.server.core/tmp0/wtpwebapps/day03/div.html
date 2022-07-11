@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>div</title>
+</head>
+<body>
+	<!--
+		블록 요소를 한 줄로 정렬하고 싶을 때에는 float 속성을 사용한다.
+		left는 왼쪽으로 배치되고, right는 오른쪽으로 배치된다.
+		각 블록요소의 width를 조정하여 정렬하는 것을 권장한다.
+	-->
+	<div style="background: red; float: left; width: 50%; text-align: center;">DIV1</div>
+	<div style="background: green; float: right; width: 50%; text-align: center;">DIV2</div>
+	<div style="background: orange; float:left; width: 33%; margin-right: 0.5%;">DIV3</div>
+	<div style="background: skyblue; float:left; width: 33%; margin-right: 0.5%;">DIV4</div>
+	<div style="background: lightgreen; float:left; width: 33%;">DIV5</div>
+	<!--
+		1. 위에 있는 float효과를 제거하기 위해서는 clear속성을 사용한다.
+		    이 때 left, right 전부 제거해주는 both 값을 사용한다.
+		2. display 속성에 flex값을 작성하면, 해당 블록 요소 안에 있는 블록요소들이 일렬로 정렬된다.   
+		3. justify-content속성은 안에 있는 요소들에 대한 정렬을 진행해준다.
+		   space-between은 남은 여백을 각 요소별로 동일한 여백으로 정렬해준다. 
+	-->
+	<div style="clear: both; display: flex; justify-content: space-between;">
+		<div style="width:20%; background: lightgray;">DIV6</div>
+		<div style="width:20%; background: pink;">DIV7</div>
+		<div style="width:20%; background: lime;">DIV8</div>
+		<div style="width:20%; background: maroon;">DIV9</div>
+	</div>
+</body>
+</html>
+
+
+
+
+

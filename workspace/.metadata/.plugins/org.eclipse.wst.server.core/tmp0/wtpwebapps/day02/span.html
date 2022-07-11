@@ -1,0 +1,49 @@
+<!--
+	병합
+	
+	colspan="합칠 열 개수"
+		좌에서 우로 합쳐지고 현재 행에만 적용.
+		
+	rowspan="합칠 행 개수"
+		현재 행과 아래 행이 합쳐지고 다음 행이 없다면 적용 안됨.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="table_style.css">
+<title>테이블 병합</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td rowspan="2">3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td colspan="2">5</td>
+			<td rowspan="2">6</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td colspan="2">8</td>
+		</tr>
+	</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+HTML 요소
+[요소의 종류]
+
+▶ display
+
+블록(block) 레벨 요소
+	- p, h, ul, ol, div, form,... 등
+	- 웹 페이지 상에 블록을 만드는 요소
+	- 코드 상에 한 줄로 이어 써도 화면 상에는 앞 뒤 요소 사이에 새로운 줄을 만들어서 나타난다.
+	- <p>apple</p><p>banana</p>
+	- 영역이 정확히 구분되어 있기 때문에, width와 height 속성을 수정할 수 있다(width, height를 주면 먹힌다)
+	- margin-top, margin-bottom 속성도 잘 적용된다(바깥 여백 상하).
+	- padding-top, padding-bottom 속성도 잘 적용된다(안쪽 여백 상하).
+	- div 태그
+		1.다른 html요소들을 하나로 묶는 데 자주 사용되는 대표적인 블록 요소이다.
+		2.주로 여러 요소들의 스타일을 한 번에 적용하기 위해 div태그를 사용한다.
+
+
+인라인(inline) 레벨 요소
+	- span, a, img, strong, em,... 등
+	- 새로운 줄을 만들지 않고 작성한 단락 내에 나타난다
+	- 안에 있는 내용만큼만 영역을 차지한다.
+	- <em>apple</em><span>banana</span>
+	- 영역이 불분명하기 때문에 width와 height를 임의로 부여할 수 없다(width, heigth를 줘봤자 안먹힌다)
+	- margin-top, margin-bottom 속성도 부여할 수 없다(바깥 여백 상하).
+	- padding-top, padding-bottom 속성도 부여할 수 없다(안쪽 여백 상하).
+	- span 태그
+		1. 텍스트의 특정 부분을 묶는 데 자주 사용되는 요소이다.
+		2. 주로 텍스트의 특정 부분에 따로 다른 스타일을 적용하기 위해 사용한다.
+
+인라인 블록(inline-block) 레벨 요소
+	- button, input, select,...
+	- inline 요소와 동일한 영역(내용만큼)을 가지지만 width와 height를 설정할 수 있다.
+	- margin-top, margin-bottom 속성도 부여할 수 있다(바깥 여백 상하).
+	- padding-top, padding-bottom 속성도 부여할 수 있다(안쪽 여백 상하).
+-------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

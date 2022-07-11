@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+<script>
+var data = 100;
+
+function test(){
+  var data;
+  data = 10;
+  /* this.data = 20; */
+  console.log(data);
+  console.log(this.data);
+}
+
+test();
+
+console.log(data);
+</script>
+</html>

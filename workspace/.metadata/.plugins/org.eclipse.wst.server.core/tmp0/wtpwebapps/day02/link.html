@@ -1,0 +1,53 @@
+<!--
+	링크 태그
+	
+	HTML 링크(Link)
+	현재 페이지에서 다른 페이지로 이동하고자 할 때 하이퍼링크를 사용한다.
+	보통 링크라고 부르며, <a>태그를 사용한다.
+	
+	<a href="페이지의 경로, 사이트 주소" target="출력할 창"></a>
+	
+	_blank : 새 창이나 새 탭으로 열기
+	_self : 현재 창
+	_parent : 부모 창
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>링크 태그</title>
+</head>
+<body>
+	<a href="https://www.naver.com" target="_blank">네이버로 이동</a>
+	<a href="https://www.feelway.com"><img src="//icon.feelway.com/feel_image_02/logo.svg" width="150"></a>
+	<a href="https://www.youtube.com/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAaVBMVEX////tMCPtLB7tKhv+9fXuST/tKBjtJRTwXlbsAADsGAD/+fnxbWbvUUnsIg/98fD0h4L85+b6y8n1mZTzgnzyeHP1o5/1nZnuQTb2rKntNCj84N/719X0ko797Ov5wsHwZV74ubftOi/i6vMeAAACfklEQVRoge2aa5OrIAyGRVoVRFSs3Vq1tf7/H3lCOztnvXQXr5k9h/dTpzo+GhISCI5jZWVlZWVlZWX1fyvU2ubJ8S0tK6XUvSiyLElOeZ4LIZrgqUjr9TOAfwVcTJI6OxePu1JVmd7iw0RenKrHx0k00aW9Usk5Y5xzKaUP8kD0KVfr9ZPCn/oi3AN3crhdUtJejoHIs0KVNxOzpB9Nq0HS008m86XfyvMlvDUNkuoHdJlz7i2hjYpKFt2/w56ZvzbzE83E++EWfCOqlmzjN9h8Sywh3nX8i8/bYgnxgzFsujWWEF6MWXkrl/or1x9iD2xzLCFsGE2P7c0MriUG3NP2ZgbRAbddfZYaEyt72HgPM4NHP3rcag+3gkmr7nGLfb534Fi13IXrRv1Zw9uFS0gvEQd0Hyzr5obwaBpG7jLDsLTLNX7aRfAlpmGqwzWend1jqI4LfL8XwDdz7kEH3Wzv76VC42njyXXChM0cZpl1uGoaFwrPhs0aZpl0uMZZ8JPrOPeIz0gl/mkp1wnP1+kO5uUdrvH0/IUL3pjIqVmbNh2ucS3Z4YI/BhONTbs1pXFa6HFhhNpJMeVG4TpcJ6ynGLvHNa6uhlyovIV5TLmXw2pcGObIOP5X5cIwUzPP7HGN0/47rukwu9d4Xa5es5uA1+dCVBiA/5XvDWs+Y3yx/PlXxu+C+QprfsbKR1j5F6vewKqvsOpJrPoZa72AtT7CWg9irX+x1vtY+xto+zlY+1dY+3VY+5NY+7FY+89o++1Y/QWsfgpW/witX4bVH0Trh6L1f9H63Wj9fQfrPMNTKOc3vuh1XqXa7byK4Vttdj7HysrKysrKysrq9+gPefxEt7aiwJ0AAAAASUVORK5CYII="></a>
+	<a href="https://www.apple.com/kr/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAVFBMVEX///9mZmZjY2NfX19bW1tXV1f8/Pzo6Ohvb29qamrb29vw8PD09PSkpKR6enqHh4fi4uLS0tLGxsaVlZW8vLzMzMy1tbWurq6NjY2bm5uBgYF0dHRc/6yQAAADvklEQVRoge2a2XLkIAxFDQK877v9//852J3MGNKdIKMiNTO5D/3SLk6xSEhCUfSjv00qHqe+V4Gp+VSnICAJy81nLjhjjO8huWpgwE7xKiA2XwRj4blNCuw3tw6Gbc+NfRPMobAZv2CZGANhGwPLeBwGm6cmdguDjWq4YhlMYbCTYKbyINjYwsIaBBstYE03zKlqpUkVgYy3Ns5ysDuh4dZ0myDYaDZ3Vw5hsMpcZlGGwWpXZZjQEggbZVfjhTpYnDFeuBAwnBv+BBmh3LLB5aIOZEDvXK4lZJ2FpGovmez7tnZFWKqWUtZhUsUhqhOmmnFe+6Xuy655OabOUcp+S1Ktql6nzHcVVFvuHACOrdS/+zo+udnzsazY+c15zo7vk7X1QBdDxeHqDfWQ6dIZ6GLsEwDrijg+rIa7K94lwh7vtBuNfpuMyspUPvnm8V3V3qHm9asR9ZCwDHGRTZW0Iw7jM7niF7vlnw15oFPxbDkMwY6NfAb5xZBu4hznVWYa7HHAMOAPcbEHGJG6dHRYTLiXsa/OC0quoYjaabFp58YtPzUgNLZ3zJkyys1l4BzdVpSrDI5rrMM1Kss9JNw9dEI4Xele7bBzPB9hUoiebrq8cr+Ac8JVFgjPPBA65t4dGy1085WIq9fM8byEKmVldC7S3WNEtNuLKWXRWRGuEL2RcVEltILu5hWY7Y3prAgwMbtdb/QQx+TilFc+JmAn5KIK7//AfL9tnb/pXKHsiJArMNVZQvsFzK1P6K94guAWhEEs5mApwlwB9UJJGF4xhuBSpoKYp1HKRJ/v7lzCuA5lwoRx7CHn0M56m/EU4o2Ftsbg/mBImnUjgnfKfPAEOxoT7QYz97rKRLrBWsItgI9pN5gddTOn/JuyrvIQF6uDIc/UC60F7GuDIow5LmCHyg5pve5N0mGLSYvPDzlVlBT9fN1uJloffUg6PefE1FzXStaH9hdPScfQ0m4I8ZR7JasnnbB0TpVIJ4xpMaQ80pgHM6ttzguLamQZyCacol5EFVXlDtsLRnQtYWr9D9E8iaJeYR+iWOk7HXeFP/ded1TrvdI3u2V9vQfilc6U38Ukbndl5T6xFqqSZCm+7y/BqyW5eQ0+24VeY9EOwwLzZ2NzIWBby3JJQT6Fw+bbCZUn9uHiUvTdu4WobKrlh0Ye6bG371LrZVgOMllbu89sXFNxWRfgNC2rWXU0dWmmgGp+3kpWtGui/z7bw8RC1V+osnlL0mrt4k8OS9EM5bJt9Uza1aiK3OWk2K1+P/o/9QuuazK9pg4CqQAAAABJRU5ErkJggg=="></a>
+	<a href="https://www.coupang.com/"><img src="https://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png"></a>
+	<a href="https://www.amazon.com/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAAkCAMAAACE/VXhAAAAn1BMVEX///8AAAD/mQD09PT/lwBnZ2f7+/v/kQCysrI+Pj7/lQD/kwDj4+PKysopKSk4ODjS0tJzc3OCgoLq6upaWlqQkJAuLi6ioqK6urrCwsKKiop7e3tKSkpERERVVVX/8eT/qkwPDw8dHR2ampr/9u3/3b7/4sn/zZ7/s2T/yJX/6dT/ojD/wYP/17P/r1r/06v/iQD/pT//nR7/vHn/tm5Gwt3CAAAD7UlEQVRYha2WaWOyMAyAixxFUBHBA/GY4olu89j//21vm7QBJvN1unwYXUzz5GgKjAmJhnbHWEx7XYbSGo1GiXiMY3vckopuL7aziGlxRmFzYQThSCvcsjioi4ah2N7WJonwKXwl6czOTFSlhpYJamK5Zi7qhHMbV66mkL2BkbaMsnQrTgMInJlynWpPYBKU9iwhWPi1rXXmuOpxXLJHVQ138u1/4PaH5JPcdPCRae5iqm1m5CGWP6p4BviY1HPTssLU3HChVUPmwFOUMIK8m5RvnVAmocmckJw6454UVDQpENeJoGOh5hbphSyRjx4cHnKN3ITCbuuV6ALE2YGCg6pFpw2PhRFpB32yiYjbUnE3men2wwlsjqpcGSUWo0/xyu6PsnCGJyzQVUUZqgpWIrKVztRlxfQWRbTfuW7VNXELmapasNKhnlUrh8HEmmtWMHJg+/akU+WCwyYFXuGaiUg6MCrcgDwjbAnakXJqUpYmYVzV7Ee53dKQEBfHAm+SPrZQSlLmdspcp6k8LB7k9oyyKC6WNizFgNy2qsItF4PPWs63/v7EzWCVds1Kf5flPkC+QSmeGi42ILo9Vz9wzaKezYKLo6vPNvR3cb/OwMiKA/k/7rCo4YDM0Humj1ibPOFd3qnhLin8hEp1jwuZpVKDw52QKyO20yGkHFENsdVpDRf+upQl1OoeF36zKRVIEqusJNPbXOp7u4YLxZqSG7j773HxNJvFy8BRBSfpK1/y3ZZp3A0XL95gTG+d4X2uCq9HOc6+c1PdeiPFd1q7jtstNtChvMd1CvtYxwmUQRzPFppbfjOOWR0Xh02KK/u0jCp1Dm64jL4HQpjBBJqoP5HMUYyXR5FOnxFtWeayBKoRSu92EyY/GwTBAGipWAVw587EYgouWhDWrA2DCryuyQpp4XeY+kqxVUBOU7jE62wiPMWoNMsbH5A6+1W+yVcVTdRtObd2fyrvHx6XYn0+62HO33+9Z+2fJNS3GtbhWS77PF3Wv9yy367z+Xy+2XnW+Wku2/j88FuyEm7tnuey1cHnl+3q/4ZlWe/FRu5tX+AyduSWz3ebh+3n+ws/5WzD+fwlLttc/IbFresj6Pn2zD3PF63Z+5fXsEL23GtYns8/tvmdIVytrw3uWRbfSaMLf3qMSi6vgtwQbO6dj5/5TQHn6+3uwn1PDA8/5FKT89fTRbIvRhLYvhjPxnl3vR6FXL8+DhaXSPmrx8+qG9dT/idcQd43IGkQy7I8JQAEne9/aZhz+v2N87PkV1FojamI6ID/8V4033n8/D+I3r9ZoqoiS4vy9rn3tv9rUI2IU3TcvR0k9/D2ddyuXxzUf3GzP+Bsmw4JAAAAAElFTkSuQmCC"></a>
+	<a href="http://fow.kr/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWOhe1h-xBbHB8tDezC_v8-QYrudwGHWCp0vTBzLJVGJ5lPAm9kjHs8th4sZiLzvQf_Y4&usqp=CAU"></a>
+	<a href="https://www.melon.com/"><img src="https://cdnimg.melon.co.kr/resource/image/web/common/logo_melon142x99.png"></a>
+	<a href="https://music.bugs.co.kr/"><img src="https://file.bugsm.co.kr/wbugs/common/header/logo_bugs.png?_t_s_=20220107-1355"></a>
+	<br>
+	<a href="link_test.html">링크 태그에 대한 설명페이지로 이동</a>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

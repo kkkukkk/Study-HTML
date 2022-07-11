@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form태그와 input태그 속성 예제</title>
+</head>
+<body>
+	<form action="" method="get" name="joinForm">
+		<p>
+			아이디 <input type="text" placeholder="아이디를 입력해주세요." name="userId" required>
+		</p>
+		<p>
+			비밀번호 <input type="password" placeholder="15자 이상, 대문자 포함" name="userPw" required>
+		</p>
+		
+		<fieldset>
+			<legend>성별</legend>
+			<p>
+				<!--label 태그는 해당 항목 외에 다른 것을 클릭해도 반영될 수 있게 해준다.-->
+				<label>
+					<input type="radio" name="gender" value="남"> 남자
+				</label>
+				<label>
+					<input type="radio" name="gender" value="여"> 여자
+				</label>
+				<label>
+					<input type="radio" name="gender" value="선택안함" checked> 선택안함
+				</label>
+			</p>
+		</fieldset>
+		
+		<fieldset>
+			<legend>취미</legend>
+			<p>
+				<label>
+					드라이브 <input type="checkbox" name="hobby" value="드라이브">
+				</label>
+				<label>
+					등산 <input type="checkbox" name="hobby" value="등산">
+				</label>
+				<label>
+					영화보기 <input type="checkbox" name="hobby" value="영화보기">
+				</label>
+				<label>
+					게임 <input type="checkbox" name="hobby" value="게임">
+				</label>
+				<label>
+					기타 <input type="checkbox" name="hobby" value="기타">
+				</label>
+				<input type="text">
+			</p>
+		</fieldset>
+		
+		<p>
+			<!--
+				label의 for옵션에 연결하고자 하는 태그의 id를 작성하면
+				label 안에 있는 내용을 클릭하였을 때 연결된 태그가 작동한다
+			-->
+			<label for="img">
+				<img src="추가.png">
+			</label>
+			<input type="file" id="img" style="display:none;">
+		</p>
+		<p>
+			색상 <input type="color">
+		</p>
+		<p>
+			메일 주소 <input type="email">
+		</p>
+		<p>
+			웹 사이트 <input type="url">
+		</p>
+		<p>
+			연락처 <input type="tel">
+		</p>
+		<p>
+			조회 기간 <input type="date">
+		</p>
+		<p>
+			참여 인원 <input type="number" value="1" min="0" max="100" step="5">
+		</p>
+		<p>
+			단계(상, 중, 하) <input type="range" value="1" min="1" max="3">
+		</p>
+		<p>
+			검색 <input type="search">
+		</p>
+		
+		<p>
+			학과 선택 
+			<select name="major">
+				<option value="archi">건축공학과</option>
+				<option value="maechanic">기계공학과</option>
+				<option value="indust">산업공학과</option>
+				<option value="elec">전기전자공학과</option>
+				<option value="com">컴퓨터공학과</option>
+			</select>
+		</p>
+		
+		<textarea rows="4" cols="30" style="resize: none;">
+안녕하세요
+반갑습니다.
+		</textarea>
+		
+		<p>
+			<input type="text" list="choice">
+			
+			<datalist id="choice">
+				<option value="grammar">문법</option>
+				<option value="speaking">회화</option>
+				<option value="listening">리스닝</option>
+				<option value="voca">어휘</option>
+			</datalist>
+		</p>
+		
+		<p>
+			진행률 <progress value="30" max="100"></progress>
+		</p>
+		<p>
+			<input type="submit" value="가입 완료">
+		</p>
+		<p>
+			<input type="button" value="버튼" onclick="">
+		</p>
+		<p>
+			<input type="reset" value="초기화">
+		</p>
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
